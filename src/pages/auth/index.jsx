@@ -9,7 +9,7 @@ const Auth = () => {
     --promisse döndürür kullanıcı girerse kullanıcı bilgilerini döndürür
     --hata olursa hatayı yakalamak gerekir
     */
-    signInWithRedirect(auth, provider);
+    signInWithPopup(auth, provider);
   };
   return (
     <div className="auth">
