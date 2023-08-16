@@ -217,7 +217,6 @@ body {
 }
 
 @media screen and (max-width: 350px) {
-  /* Button boyutunu daha da küçültme */
   button {
     padding: 0.3em 0.6em;
     font-size: 0.7em;
@@ -228,7 +227,7 @@ body {
   .chat form input {
     width: 100%;
     box-sizing: border-box;
-    font-size: 12px;
-    padding: 2px 4px;
+    font-size: 14px;
+    padding: 8px 12px; /* Daha fazla alan kaplaması için padding artırıldı */
   }
 }
