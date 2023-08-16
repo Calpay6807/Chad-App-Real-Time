@@ -173,3 +173,62 @@ body {
 .chat form button:hover {
   box-shadow: 0 0 10px #646cff;
 }
+
+/* Telefon boyutunda stil değişiklikleri */
+@media screen and (max-width: 600px) {
+  /* Auth sayfası */
+  .auth {
+    width: 80vw; /* veya istediğiniz uygun genişlik */
+    gap: 20px; /* İhtiyaca göre boşluk ayarlayın */
+  }
+  .room-container input,
+  .chat form input {
+    width: 100%; /* İnputun genişliğini ayarlama */
+    box-sizing: border-box; /* Kenar boşluklarını dahil etme */
+  }
+  /* Oda seçme sayfası */
+  .room-container input {
+    font-size: 16px; /* İhtiyaca göre boyut ayarlayın */
+  }
+
+  /* Sohbet Sayfası */
+  .chat {
+    width: 90vw; /* veya istediğiniz uygun genişlik */
+  }
+  .chat header,
+  .chat form {
+    padding: 10px; /* İhtiyaca göre boşluk ayarlayın */
+  }
+  .chat main {
+    font-size: 16px; /* İhtiyaca göre boyut ayarlayın */
+  }
+  .chat form input {
+    font-size: 14px; /* İhtiyaca göre boyut ayarlayın */
+  }
+  .chat header a,
+  .chat form button {
+    padding: 3px 8px; /* İhtiyaca göre boşluk ayarlayın */
+    font-size: 14px; /* İhtiyaca göre boyut ayarlayın */
+  }
+  button {
+    padding: 0.4em 0.8em; /* İhtiyaca göre boyutları ayarlayın */
+    font-size: 0.8em; /* İhtiyaca göre boyutları ayarlayın */
+  }
+}
+
+@media screen and (max-width: 350px) {
+  /* Button boyutunu daha da küçültme */
+  button {
+    padding: 0.3em 0.6em;
+    font-size: 0.7em;
+  }
+
+  /* Input boyutunu ve paddingini ayarlama */
+  .room-container input,
+  .chat form input {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 12px;
+    padding: 2px 4px;
+  }
+}
